@@ -1,0 +1,143 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #e74c3c;
+    --accent: #3498db;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content {
+    background: rgba(44, 62, 80, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.candidate-card {
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.candidate-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.candidate-card.selected {
+    border-color: var(--secondary);
+    background-color: #fff5f5;
+}
+
+.candidate-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #e9ecef;
+}
+
+.results-chart {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.btn-vote {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-vote:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    
+    .auth-card {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}
